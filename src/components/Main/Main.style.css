@@ -1,18 +1,36 @@
 .main {
   padding: 26px 36px;
+  overflow: scroll;
 }
 .cardContainer {
   display: flex;
   justify-content: space-between;
 }
+.cardContainer div:not(:last-child) {
+  margin-right: 1.125rem;
+}
 .cardContainer__card {
   display: flex;
   flex-direction: column;
-  width: 176px;
+  min-width: 176px;
 }
 .cardContainer__card-img img {
   display: block;
   width: 100%;
+}
+.cardContainer__card-img {
+  position: relative;
+}
+.cardContainer__card-img p {
+  position: absolute;
+  width: 61px;
+  height: 20px;
+  left: 9px;
+  top: 9px;
+  background-color: #ffffff;
+  font-size: 10px;
+  padding: 3px;
+  text-align: center;
 }
 .cardContainer__card-info {
   font-size: 12px;
@@ -26,8 +44,9 @@
 .country {
   color: #918e9b;
 }
-.rating, p {
-    color: #222222;
+.rating,
+p {
+  color: #222222;
 }
 .country::before {
   content: '\2022';
