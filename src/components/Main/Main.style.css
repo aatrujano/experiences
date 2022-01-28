@@ -1,0 +1,35 @@
+.main {
+  padding: 26px 36px;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.cardContainer__card {
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+}
+.cardContainer__card-img img {
+  display: block;
+  width: 100%;
+}
+.cardContainer__card-info {
+  font-size: 12px;
+  padding: 8px 0;
+}
+.cardContainer__card-info img,
+.cardContainer__card-info > span {
+  margin-right: 2px;
+}
+.numOfVotes,
+.country {
+  color: #918e9b;
+}
+.rating, p {
+    color: #222222;
+}
+.country::before {
+  content: '\2022';
+  margin-right: 3px;
+}

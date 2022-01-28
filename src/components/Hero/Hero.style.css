@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 36px;
+}
+.hero__imgContainer {
+  position: relative;
+  align-self: center;
+}
+.hero__imgContainer-imgGrid {
+  width: 395px;
+  margin-bottom: 32px;
+}
+.hero__text-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+.hero__text-info {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  max-width: 320px;
+  color: #222222;
+}
